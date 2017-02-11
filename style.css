@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{
+	background-image: url(Pictures/blur-1869454_1920.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+input[type=text]{
+	width: 25%;
+	background-color: #D3D3D3;
+	margin-top: 40%;
+	margin-left: 40%;
+	border-radius: 30px;
+	font-size: 30px;
+}
+
