@@ -1,0 +1,47 @@
+@charset "UTF-8";
+html {
+	background-image: url(../Pictures/pexels-photo-203238.jpg);
+  height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body{
+	height: 100%;
+
+}
+.button{
+	width: 15%;
+	height: 100px;
+	margin-top: 20%;
+	background-color: white;
+	border-radius: 30px;
+	font-size: 100%;
+}
+#button0{
+	margin-left: 17.5%;
+}
+#button1 {
+	margin-left: 10%;
+}
+#button2{
+	margin-left: 10%;
+}
+button:hover {
+  background: lightblue;
+}
+
+p{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	font-size: 50px;
+	color: #8183a8;
+}
+div{
+	margin-top:30%
+}
+;
