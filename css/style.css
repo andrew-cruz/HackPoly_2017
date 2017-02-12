@@ -13,6 +13,34 @@ body{
 	height: 100%;
 
 }
+#myProgress {
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+}
+#myBar {
+		border-color: blue;
+		border-bottom-left-radius: 40px;
+		border-top-left-radius: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+#label {
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#buttonDiv{
+	margin-top:30%
+}
+p{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	font-size: 50px;
+	color: white;
+}
 .button{
 	width: 15%;
 	height: 100px;
@@ -32,16 +60,4 @@ body{
 }
 button:hover {
   background: lightblue;
-}
-
-p{
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	font-size: 50px;
-	color: #8183a8;
-}
-div{
-	margin-top:30%
-}
-;
+};

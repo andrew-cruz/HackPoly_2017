@@ -44,10 +44,7 @@ function buttonText(){
       }
     }
   }
-}
-
-
-
+};
 
 var number = 0;
 var amount = 0;
@@ -55,7 +52,7 @@ var amount = 0;
 //jquery functions that change on screen question
 $(document).ready(function(){
     $("button").click(function(){
-      $("p").text(question[number] + question[number + 1]);
+      $("p").text(question[number] + "<br />" +   question[number + 1]);
       $('#button0').text("$" + buttonValue[amount]);
       $('#button1').text("$" + buttonValue[amount + 1]);
       $('#button2').text("$" + buttonValue[amount + 2]);
@@ -65,14 +62,29 @@ $(document).ready(function(){
     });
 
     $('#button0').click(function(){
-
+      move();
     });
 
     $('#button1').click(function(){
-
+      move();
     });
 
     $('#button2').click(function(){
-
+      move();
     });
 });
+
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            document.getElementById("label").innerHTML = width * 1 + '%';
+        }
+    }
+}
