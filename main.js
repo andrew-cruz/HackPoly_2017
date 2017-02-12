@@ -12,7 +12,7 @@ var script = document.createElement('script');
 // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
 script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
 	document.getElementsByTagName('head')[0].appendChild(script);
-}
+
 
 // Loop through the results array and place a marker for each
 // set of coordinates.
@@ -24,8 +24,4 @@ window.eqfeed_callback = function(results) {
 	position: latLng,
 	map: map
 });
-}
-}
-//  </script>
-//  <script async defer
-//  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg2cXKdPKhfU8dfxGPRnGF846VlRPDDW0&callback=initMap">
+);
